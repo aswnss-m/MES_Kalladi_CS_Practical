@@ -1,0 +1,8 @@
+table{
+    margin: 20px 5%;
+    width: 90%;
+}
+td {
+    text-align: center;
+    padding: .5rem;
+  }
