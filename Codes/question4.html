@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Question-4</title>
+</head>
+<body>
+    <center>
+        <button class="btn btn-lg btn-warning" onclick="downloadpdf()" style="margin:10px;">Donwload Pdf</button>
+    </center>
+    <pre class="text h6" id="content">
+        &lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Frames&lt;/title&gt;
+&lt;/head&gt;
+&lt;frameset cols = "*,*,*"&gt;
+    &lt;frame name = "top" src = "frames/left.html" /&gt;
+    &lt;frame name = "main" src = "frames/middle.html" /&gt;
+    &lt;frame name = "bottom" src = "frames/right.html" /&gt;
+ 
+    &lt;noframes&gt;
+       &lt;body&gt;Your browser does not support frames.&lt;/body&gt;
+    &lt;/noframes&gt;
+    
+ &lt;/frameset&gt;
+
+
+&lt;body&gt;
+
+
+&lt;/body&gt;
+
+
+&lt;/html&gt;
+
+
+
+<hr>
+<hr>
+&lt;!-- left.html --&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Fruits&lt;/title&gt;
+&lt;/head&gt;
+&lt;body background="images/image1.jpeg"&gt;
+    &lt;table border="2px solid black"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Fruit&lt;/th&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Apple&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Oranges&lt;/td&gt;
+            &lt;td&gt;5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mango&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p&gt;Want to know more about fruits &lt;a href="https://www.google.com/search?q=fruits"&gt;click here&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+<hr>
+<hr>
+&lt;!-- middle.html --&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Companies&lt;/title&gt;
+&lt;/head&gt;
+&lt;body background="images/image2.jpeg"&gt;
+    &lt;table border="2px solid black"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Companies&lt;/th&gt;
+            &lt;th&gt;Founder&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Apple&lt;/td&gt;
+            &lt;td&gt;Steve Jobs&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tesla&lt;/td&gt;
+            &lt;td&gt;Elon Musk&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Microsoft&lt;/td&gt;
+            &lt;td&gt;Bill Gates&lt;/td&gt;
+        &lt;/tr&gt;        
+        &lt;tr&gt;
+            &lt;td&gt;Alibaba&lt;/td&gt;
+            &lt;td&gt;Jack Ma&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p&gt;Want to know more about Companies &lt;a href="https://en.wikipedia.org/wiki/List_of_companies_of_India"&gt;click here&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+<hr>
+<hr>
+&lt;!-- right.html --&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Phone&lt;/title&gt;
+&lt;/head&gt;
+&lt;body background="images/image3.jpeg"&gt;
+    &lt;table border="2px solid black"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Price&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Samsung S21&lt;/td&gt;
+            &lt;td&gt;Rs 69,999&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;One Plus Nord&lt;/td&gt;
+            &lt;td&gt;Rs 27,999&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Redmi K20&lt;/td&gt;
+            &lt;td&gt;Rs 29,999&lt;/td&gt;
+        &lt;/tr&gt;        
+        &lt;tr&gt;
+            &lt;td&gt;Vivo V15&lt;/td&gt;
+            &lt;td&gt;Rs 28,499&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p&gt;Want to know more about phones &lt;a href="https://www.flipkart.com/search?q=phones"&gt;click here&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+    </pre>
+    <script src="js/pdfdownload.js"></script>
+    <center>
+        <button class="btn btn-block btn-warning" onclick="downloadpdf()"><h5>Download Pdf</h5></button>
+    </center>
+</body>
+</html>
