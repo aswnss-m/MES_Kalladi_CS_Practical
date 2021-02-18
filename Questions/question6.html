@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+<center>
+    <form action="#" name="studentRegistrationForm">
+        <legend>Student Registration Form</legend>
+        <table cellspacing="20px">
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="studentName" placeholder="YourName"></td>
+            </tr>
+            <tr>
+                <td>Address : </td>
+                <td><textarea name="studentAddress" cols="30" rows="10" placeholder="Address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    Male : <input type="radio" name="studentGender" value="M">
+                    Female : <input type="radio" name="studentGender" value="F">
+                    Other : <input type="radio" name="studentGender" value="O">
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification : </td>
+                <td>
+                   <select name="studentQualification">
+                       <option value="diploma">Diploma</option>
+                       <option value="HSE">HSE +2</option>
+                       <option value="SSLC">SSLC</option>
+                       <option value="10thThulyatha">10th (Thulyatha)</option>
+                       <option value="Other">Other ..</option>
+                   </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Known : </td>
+                <td>
+                    Malayalam : <input type="checkbox" name="studentLanguages" value="mal">
+                    English : <input type="checkbox" name="studentLanguages" value="eng"> <br>
+                    Hindi : <input type="checkbox" name="studentLanguages" value="hin">
+                    Tamil : <input type="checkbox" name="studentLanguages" value="tml"> <br>
+                    Karantaka : <input type="checkbox" name="studentLanguages" value="ktr">
+                    Bengal : <input type="checkbox" name="studentLanguages" value="bng">
+                    Other : <input type="checkbox" name="studentLanguages" value="othr">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+
+ 
+</body>
+</html>
