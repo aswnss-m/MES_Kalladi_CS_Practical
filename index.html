@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
+    <script>
+        var unlocked = false;
+        function getpassword(x) {
+            var link = "https://aswnss-m.github.io/Sajitha/Codes/question" + x + ".html";
+            if (unlocked) {
+                window.open(link);
+            }
+            else {
+                var password = prompt("Enter Password : ");
+                /*
+                    If You Can read me !!
+                    Hey You are a Programmer , solve the question yourself
+                    Have Some dignity dude
+                 */
+                if (password == "sajitha7012") {
+                    unlocked = true;
+                    window.open(link);;
+                } else if(password == null){
+                    stop();
+                }
+                else{
+                    alert("Wrong Password !! Try Again");
+                    getpassword(x);
+                }
+            }}  
+    </script>
 </head>
 
 <body>
@@ -25,92 +51,91 @@
                 <td><a href="Questions/question1.html">Design a web page to show your college and its departments
                         details using basic text formatting tags(atleast 4)
                     </a></td>
-                <td><a href="Codes/question1.html" class="btn btn-primary">View Code</a></td>
+                <td><a href="#" class="btn btn-primary" onclick="getpassword(1)">View Code</a></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><a href="Questions/question2.html">Design a webpage to show image as link (include two different
-                        links)
-                    </a></td>
-                <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td>
+                        links)</a></td>
+                <td><a href="#" onclick="getpassword(2)" class="btn btn-primary">View Code</a></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td><a href="Questions/question3.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>4</td>
                 <td><a href="Questions/question4.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>5</td>
                 <td><a href="Questions/question5.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>6</td>
                 <td><a href="Questions/question6.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>7</td>
                 <td><a href="Questions/question7.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>8</td>
                 <td><a href="Questions/question8.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>9</td>
                 <td><a href="Questions/question9.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>10</td>
                 <td><a href="Questions/question10.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>11</td>
                 <td><a href="Questions/questio11.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>12</td>
                 <td><a href="Questions/question12.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>13</td>
                 <td><a href="Questions/question13.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>14</td>
                 <td><a href="Questions/question14.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
             <tr>
                 <td>15</td>
                 <td><a href="Questions/question15.html" class="text-danger">{Queestion Will be updated.}
                     </a></td>
-                <!-- <td><a href="Codes/question2.html" class="btn btn-primary">View Code</a></td> -->
+                <!-- <td><a href="#" onclick="getpassword()" class="btn btn-primary">View Code</a></td> -->
             </tr>
         </table>
     </div>
