@@ -13,24 +13,31 @@
         <button class="btn btn-lg btn-warning" onclick="downloadpdf()" style="margin:10px;">Donwload Pdf</button>
     </center>
     <pre class="text h6" id="content">
-        // Display the short form of a string. E.g. Computer Science : CS
-        #include&lt;stdio.h&gt;
-        #include&lt;string.h&gt;
-        #include &lt;ctype.h&gt;
-        int main(){
-            char userInput[200],abb[10];
-            int index=0,i;
-            printf("Enter the String : ");
-            fgets(userInput,200,stdin);
-            for(i=0;userInput[i] != '\0';i++){
-                if(isupper(userInput[i])){
-                    abb[index] = userInput[i];
-                    index++;
-                }
-            }
-            printf("Abbreviation : %s\n",abb);
-            return 0;
+        // Find the currency denomination of a given amount.
+// Print the number of 2000,500,100 etc notes to make the given amount
+#include &lt;stdio.h&gt;
+#include&lt;math.h&gt;
+int main(){
+    int temp,i,current[10],amount;
+    int available_currencies[] = {2000,500,200,100,50,20,10,5,2,1};
+    printf("Enter the amount : ");
+    scanf("%d",&amount);
+    printf("Given amount : %d\n",amount);
+    for(i=0;i&lt;10;i++){
+        if(amount&gt;=available_currencies[i]){
+            temp = floor(amount/available_currencies[i]);
+            current[i] = temp;
+            amount = amount-(available_currencies[i]*current[i]);
         }
+        else{
+            current[i]=0;
+        }
+    }
+    for (i=0;i&lt;10;i++){
+        printf("Rs %d : %d\n",available_currencies[i],current[i]);
+    }
+    return 0;
+}
     </pre>
     <script src="js/pdfdownload.js"></script>
     <center>
