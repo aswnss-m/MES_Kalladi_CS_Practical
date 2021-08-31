@@ -12,7 +12,7 @@ int main(){
         if(amount>=available_currencies[i]){
             temp = floor(amount/available_currencies[i]);
             current[i] = temp;
-            amount = amount-(available_currencies[i]*current[i]);
+            amount = amount%available_currencies[i];
         }
         else{
             current[i]=0;
