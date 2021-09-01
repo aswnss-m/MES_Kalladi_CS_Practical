@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Question-"number"</title>
+</head>
+<body>
+    <center>
+        <button class="btn btn-lg btn-warning" onclick="downloadpdf()" style="margin:10px;">Donwload Pdf</button>
+    </center>
+    <pre class="text h6" id="content">
+        // Check for palindrome string.
+#include &lt;stdio.h&gt;
+int main(){
+    char A[100];
+    int i,flag=1,len=0;
+    printf("Enter the string : ");
+    scanf("%s",A);
+    for (i=0;A[i]!='\0';i++){
+        len++;
+    }
+    for(i=0;i&lt;len;i++){
+        if(A[i] != A[len-1]){
+            flag =0;
+        }
+        len--;
+    }
+    if(flag ==1){
+        printf("Palindrome !\n");
+    }
+    else{
+        printf("Not Palindrome !\n");
+    
+    }
+    return 0;
+}
+    </pre>
+    <script src="js/pdfdownload.js"></script>
+    <center>
+        <button class="btn btn-block btn-warning" onclick="downloadpdf()"><h5>Download Pdf</h5></button>
+    </center>
+</body>
+</html>
