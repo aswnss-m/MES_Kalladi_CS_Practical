@@ -1,8 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* 
+font-family: 'DM Serif Display', serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* ____Background details_____ */
+
+body{
+    background: linear-gradient(333.39deg, #262626 1.4%, #111111 80.97%);
+    
+}
+h1{
+
+    justify-content: center;
+    text-align: center;
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
 table{
     margin: 20px 5%;
     width: 90%;
+    color:rgba(79, 79, 79, 0.823);
+    background-color:none;
 }
 td {
-    text-align: center;
+  
     padding: .5rem;
   }
+
+/* MAIN CONTENT */
+
+  .main_content{
+      padding: 5%;
+  
+  }
+
+th{
+      color:black;
+      font-family: 'Open Sans', sans-serif; 
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+   
+  }
+  a{
+      color: rgb(6, 40, 108);
+      font-weight: 600;
+  }
+  a:hover{
+      color:black;
+  }
+
+
+.table_full_main{
+    font-weight: 500;
+     background-color: #FFE6BC;
+     border-radius: 0.7em;
+}
+.table_full_main_1{
+    font-weight: 500;
+     background-color: #FFE6BC;
+     border-radius: 0.7em;
+}
+.disabled{
+    
+    color: rgb(6, 40, 108);
+    font-weight: 600;
+}
+.disabled:hover{
+    color: black;
+    cursor:default;
+}
+.btn-primary{
+    background-color: rgb(12, 12, 12);
+    color: #F7F1EA;
+    font-family: 'DM Serif Display', serif;
+    border:none;
+
+
+}
+.btn-primary:hover{
+    background-color:#FFE6BC ;
+    color: black;
+    font-weight: 800;
+
+}
+
+@media screen and (max-width: 700px){
+
+    .table_full_main{
+    
+       
+
+        
+        
+    }
+
+}
